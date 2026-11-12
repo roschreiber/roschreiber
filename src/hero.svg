@@ -103,7 +103,7 @@
 
   <text class="hey up" x="352" y="104" style="animation-delay: 0.3s">hey! i'm</text>
   <text class="name up" x="346" y="168" style="animation-delay: 0.4s">rob</text>
-  <text class="about up" x="352" y="208" style="animation-delay: 0.5s">i work on minecraft plugins, website and hardware.</text>
+  <text class="about up" x="352" y="208" style="animation-delay: 0.5s">i work on minecraft plugins, websites and hardware.</text>
   <text class="about up" x="352" y="231" style="animation-delay: 0.6s">find me at byrob.me or in the hack club slack!</text>
 </g>
 

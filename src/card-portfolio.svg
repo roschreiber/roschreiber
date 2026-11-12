@@ -3,7 +3,6 @@
 <style>
   @font-face { font-family: "Quicksand"; font-weight: 500; src: url({{quicksand-500.woff2}}); }
   @font-face { font-family: "Quicksand"; font-weight: 700; src: url({{quicksand-700.woff2}}); }
-  @font-face { font-family: "Geist Mono"; src: url({{geist-mono-500.woff2}}); }
 
   text {
     font-family: "Quicksand", sans-serif;
@@ -22,14 +21,14 @@
   }
 
   .tag {
-    fill: #fff;
-    stroke: #ddd;
+    fill: #e7e7e7;
   }
 
   .tag-text {
-    font-family: "Geist Mono", monospace;
-    font-size: 11px;
-    fill: #444;
+    font-size: 11.5px;
+    font-weight: 700;
+    fill: #555;
+    text-anchor: middle;
   }
 
   .zoom {
@@ -64,12 +63,12 @@
 <text class="title" x="20" y="180">portfolio</text>
 <text class="desc" x="20" y="202">my personal website and blog</text>
 
-<rect class="tag" x="331" y="164" width="73" height="22" rx="11" />
-<text class="tag-text" x="341" y="179">byrob.me</text>
+<rect class="tag" x="336" y="164" width="68" height="22" rx="6" />
+<text class="tag-text" x="370" y="179">byrob.me</text>
 
-<rect class="tag" x="20" y="214" width="51" height="20" rx="10" />
-<text class="tag-text" x="29" y="228">Astro</text>
+<rect class="tag" x="20" y="214" width="46" height="20" rx="6" />
+<text class="tag-text" x="43" y="228">Astro</text>
 
-<rect class="tag" x="77" y="214" width="84" height="20" rx="10" />
-<text class="tag-text" x="86" y="228">TypeScript</text>
+<rect class="tag" x="72" y="214" width="78" height="20" rx="6" />
+<text class="tag-text" x="111" y="228">TypeScript</text>
 </svg>
