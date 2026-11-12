@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="423" height="248" viewBox="0 0 423 248">
+<title>portfolio, my personal website and blog</title>
+<style>
+  @font-face { font-family: "Quicksand"; font-weight: 500; src: url({{quicksand-500.woff2}}); }
+  @font-face { font-family: "Quicksand"; font-weight: 700; src: url({{quicksand-700.woff2}}); }
+  @font-face { font-family: "Geist Mono"; src: url({{geist-mono-500.woff2}}); }
+
+  text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    fill: #111;
+  }
+
+  .desc {
+    font-size: 13.5px;
+    fill: #666;
+  }
+
+  .tag {
+    fill: #fff;
+    stroke: #ddd;
+  }
+
+  .tag-text {
+    font-family: "Geist Mono", monospace;
+    font-size: 11px;
+    fill: #444;
+  }
+
+  .zoom {
+    transform-origin: 211px 80px;
+    animation: zoom 10s ease-in-out infinite alternate;
+  }
+
+  @keyframes zoom {
+    to { transform: scale(1.1); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+    }
+  }
+</style>
+
+<defs>
+  <clipPath id="pic">
+    <rect x="15" y="10" width="393" height="140" rx="10" />
+  </clipPath>
+</defs>
+
+<rect x="5.5" y="0.5" width="412" height="243" rx="16" fill="#f6f6f6" stroke="#dcdcdc" />
+
+<g clip-path="url(#pic)">
+  <image class="zoom" href="{{portfolio.webp}}" x="15" y="10" width="393" height="140" />
+</g>
+<rect x="15.5" y="10.5" width="392" height="139" rx="9.5" fill="none" stroke="#ddd" />
+
+<text class="title" x="20" y="180">portfolio</text>
+<text class="desc" x="20" y="202">my personal website and blog</text>
+
+<rect class="tag" x="331" y="164" width="73" height="22" rx="11" />
+<text class="tag-text" x="341" y="179">byrob.me</text>
+
+<rect class="tag" x="20" y="214" width="51" height="20" rx="10" />
+<text class="tag-text" x="29" y="228">Astro</text>
+
+<rect class="tag" x="77" y="214" width="84" height="20" rx="10" />
+<text class="tag-text" x="86" y="228">TypeScript</text>
+</svg>

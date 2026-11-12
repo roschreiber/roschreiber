@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="423" height="248" viewBox="0 0 423 248">
+<title>OTD-Redux, a revived minecraft dungeon plugin</title>
+<style>
+  @font-face { font-family: "Quicksand"; font-weight: 500; src: url({{quicksand-500.woff2}}); }
+  @font-face { font-family: "Quicksand"; font-weight: 700; src: url({{quicksand-700.woff2}}); }
+  @font-face { font-family: "Geist Mono"; src: url({{geist-mono-500.woff2}}); }
+
+  text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    fill: #111;
+  }
+
+  .desc {
+    font-size: 13.5px;
+    fill: #666;
+  }
+
+  .tag {
+    fill: #fff;
+    stroke: #ddd;
+  }
+
+  .tag-text {
+    font-family: "Geist Mono", monospace;
+    font-size: 11px;
+    fill: #444;
+  }
+
+  .slide {
+    opacity: 0;
+    animation: slide 15s infinite;
+  }
+
+  @keyframes slide {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    20% { opacity: 1; }
+    25% { opacity: 0; }
+  }
+
+  .bob {
+    animation: bob 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes bob {
+    to { transform: translateY(-4px); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+    }
+  }
+</style>
+
+<defs>
+  <clipPath id="pic">
+    <rect x="15" y="10" width="393" height="140" rx="10" />
+  </clipPath>
+</defs>
+
+<rect x="5.5" y="0.5" width="412" height="243" rx="16" fill="#f6f6f6" stroke="#dcdcdc" />
+
+<g clip-path="url(#pic)">
+  <image href="{{otd-1.webp}}" x="15" y="10" width="393" height="140" />
+  <image class="slide" href="{{otd-2.webp}}" x="15" y="10" width="393" height="140" style="animation-delay: 3s" />
+  <image class="slide" href="{{otd-3.webp}}" x="15" y="10" width="393" height="140" style="animation-delay: 6s" />
+  <image class="slide" href="{{otd-4.webp}}" x="15" y="10" width="393" height="140" style="animation-delay: 9s" />
+  <image class="slide" href="{{otd-5.webp}}" x="15" y="10" width="393" height="140" style="animation-delay: 12s" />
+  <image class="bob" href="{{otd-logo.webp}}" x="27" y="20" width="112" height="76" />
+</g>
+
+<text class="title" x="20" y="180">OTD-Redux</text>
+<text class="desc" x="20" y="202">a revived minecraft dungeon plugin</text>
+
+<rect class="tag" x="340" y="164" width="64" height="22" rx="11" />
+<polygon points="354.0,169.0 355.5,172.9 359.7,173.1 356.5,175.8 357.5,179.9 354.0,177.6 350.5,179.9 351.5,175.8 348.3,173.1 352.5,172.9" fill="none" stroke="#444" />
+<text class="tag-text" x="364" y="179">{{stars}}</text>
+
+<rect class="tag" x="20" y="214" width="45" height="20" rx="10" />
+<text class="tag-text" x="29" y="228">Java</text>
+
+<rect class="tag" x="71" y="214" width="84" height="20" rx="10" />
+<text class="tag-text" x="80" y="228">Minecraft</text>
+
+<rect class="tag" x="161" y="214" width="51" height="20" rx="10" />
+<text class="tag-text" x="170" y="228">Paper</text>
+</svg>

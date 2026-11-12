@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="846" height="330" viewBox="0 0 846 330">
+<title>hey! i'm rob</title>
+<style>
+  @font-face { font-family: "Quicksand"; font-weight: 500; src: url({{quicksand-500.woff2}}); }
+  @font-face { font-family: "Quicksand"; font-weight: 700; src: url({{quicksand-700.woff2}}); }
+  @font-face { font-family: "Geist Mono"; src: url({{geist-mono-500.woff2}}); }
+
+  text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+  }
+
+  .hey {
+    font-size: 16px;
+    fill: #8a8a8a;
+  }
+
+  .name {
+    font-size: 72px;
+    font-weight: 700;
+    fill: #111;
+  }
+
+  .about {
+    font-size: 16px;
+    fill: #555;
+  }
+
+  .strip text {
+    font-family: "Geist Mono", monospace;
+    white-space: pre;
+  }
+
+  .strip {
+    animation: spin 5s steps(50) infinite;
+  }
+
+  @keyframes spin {
+    to { transform: translateX(-13000px); }
+  }
+
+  .soft { fill: #bdbdbd; }
+  .mid { fill: #7d7d7d; }
+  .ink { fill: #111; }
+
+  .fade {
+    animation: fade 1s ease-out both;
+  }
+
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .up {
+    animation: up 0.8s ease-out both;
+  }
+
+  @keyframes up {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .bg {
+    animation: drift 16s ease-in-out infinite alternate;
+  }
+
+  @keyframes drift {
+    to { transform: translate(40px, 15px); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+    }
+  }
+</style>
+
+<defs>
+  <clipPath id="card">
+    <rect x="5" y="0" width="836" height="326" rx="18" />
+  </clipPath>
+  <clipPath id="logo">
+    <rect x="30" y="20" width="260" height="290" />
+  </clipPath>
+  <filter id="grey">
+    <feColorMatrix type="saturate" values="0" />
+    <feGaussianBlur stdDeviation="5" />
+  </filter>
+</defs>
+
+<g clip-path="url(#card)">
+  <rect x="5" y="0" width="836" height="326" fill="#fff" />
+  <image class="bg" href="{{background.svg}}" x="-60" y="-190" width="960" height="683" filter="url(#grey)" />
+
+  <g class="fade" style="animation-delay: 0.2s">
+    <g clip-path="url(#logo)">
+      <g class="strip">
+{{logo}}
+      </g>
+    </g>
+  </g>
+
+  <text class="hey up" x="352" y="104" style="animation-delay: 0.3s">hey! i'm</text>
+  <text class="name up" x="346" y="168" style="animation-delay: 0.4s">rob</text>
+  <text class="about up" x="352" y="208" style="animation-delay: 0.5s">i work on minecraft plugins, website and hardware.</text>
+  <text class="about up" x="352" y="231" style="animation-delay: 0.6s">find me at byrob.me or in the hack club slack!</text>
+</g>
+
+<rect x="5.5" y="0.5" width="835" height="325" rx="17.5" fill="none" stroke="#dcdcdc" />
+</svg>
